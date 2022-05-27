@@ -14,7 +14,7 @@ const contactCreateScheme = Joi.object({
 
 const contactUpdateScheme = Joi.object({
   name: Joi.string().min(3).max(15).required(),
-  email: Joi.string().min(3).max(20).required().email().required(),
+  email: Joi.string().min(3).max(40).required().email().required(),
   phone: Joi.string().min(7).max(14).required(),
   favorite: Joi.boolean(),
 });
